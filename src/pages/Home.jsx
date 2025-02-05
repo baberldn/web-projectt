@@ -121,7 +121,6 @@ const Home = () => {
           </form>
 
           <p className="register-text">
-            Hesabınız yok mu?
             <button 
               onClick={() => navigate('/register')}
               className="register-link"
