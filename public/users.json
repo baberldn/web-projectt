@@ -1,0 +1,39 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "Namık Korona",
+        "email": "ahmet@mail.com",
+        "phone": "5551234567",
+        "password": "123456"
+      },
+      {
+        "id": 2,
+        "username": "ayse.yilmaz",
+        "email": "ayse@mail.com",
+        "phone": "5559876543",
+        "password": "123456"
+      },
+      {
+        "id": 3,
+        "username": "Beril Badan",
+        "email": "berilbadan1903@gmail.com",
+        "phone": "5061345108",
+        "password": "123456"
+      },
+      {
+        "id": 4,
+        "username": "Berkay Badan",
+        "email": "berkaybadan1@gmail.com",
+        "phone": "5061345108",
+        "password": "123456"
+      },
+      {
+        "id": 5,
+        "username": "Cahit Badan",
+        "email": "berilbadan1903@gmail.com",
+        "phone": "5061345108",
+        "password": "123456"
+      }
+    ]
+  }
