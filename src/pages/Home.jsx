@@ -63,7 +63,7 @@ const Home = () => {
 
       <div className="form-container">
         <div className="form-wrapper">
-          <h2 className="title">Giriş Yap</h2>
+          <h2 className="title-one">Sıgn In</h2>
           
           <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
@@ -76,7 +76,7 @@ const Home = () => {
                   value={formData.username}
                   onChange={handleChange}
                   className="input"
-                  placeholder="Kullanıcı Adı"
+                  placeholder="Username"
                   required
                 />
               </div>
@@ -92,7 +92,7 @@ const Home = () => {
                   value={formData.password}
                   onChange={handleChange}
                   className="input"
-                  placeholder="Şifre"
+                  placeholder="Password"
                   required
                 />
               </div>
@@ -107,7 +107,7 @@ const Home = () => {
                 className="terms-checkbox"
               />
               <label htmlFor="terms" className="terms-label">
-                Giriş yaparak şartları ve koşulları kabul ediyorum
+              I agree <strong>Terms and Conditions & Private Policy</strong> by Signing in
               </label>
             </div>
 
@@ -116,7 +116,7 @@ const Home = () => {
               disabled={loading}
               className="submit-button"
             >
-              {loading ? 'İşlem yapılıyor...' : 'Giriş Yap'}
+              {loading ? 'İşlem yapılıyor...' : 'Log In'}
             </button>
           </form>
 
@@ -125,7 +125,7 @@ const Home = () => {
               onClick={() => navigate('/register')}
               className="register-link"
             >
-              Kayıt Ol
+              Sign Up
             </button>
           </p>
         </div>

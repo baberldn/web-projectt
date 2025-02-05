@@ -71,7 +71,7 @@ const Register = () => {
 
       <div className="form-container">
         <div className="form-wrapper">
-          <h2 className="title">Kayıt Ol</h2>
+          <h2 className="title-one">Sıgn Up</h2>
           
           <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
@@ -84,7 +84,7 @@ const Register = () => {
                   value={formData.username}
                   onChange={handleChange}
                   className="input"
-                  placeholder="Kullanıcı Adı"
+                  placeholder="Username"
                   required
                 />
               </div>
@@ -100,7 +100,7 @@ const Register = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className="input"
-                  placeholder="E-posta"
+                  placeholder="E-mail"
                   required
                 />
               </div>
@@ -116,7 +116,7 @@ const Register = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   className="input"
-                  placeholder="Telefon Numarası"
+                  placeholder="Phone Number"
                   required
                 />
               </div>
@@ -132,30 +132,33 @@ const Register = () => {
                   value={formData.password}
                   onChange={handleChange}
                   className="input"
-                  placeholder="Şifre"
+                  placeholder="Password"
                   required
                 />
               </div>
             </div>
-
+            <div className="terms-group">
+              <input 
+                type="checkbox" 
+                id="terms"
+                name="terms"
+                required
+                className="terms-checkbox"
+              />
+              <label htmlFor="terms" className="terms-label">
+              I agree <strong>Terms and Conditions & Private Policy</strong> by Signing in
+              </label>
+            </div>
             <button 
               type="submit"
               disabled={loading}
               className="submit-button"
             >
-              {loading ? 'İşlem yapılıyor...' : 'Kayıt Ol'}
+              {loading ? 'İşlem yapılıyor...' : 'Sıgn Up'}
             </button>
           </form>
 
-          <p className="login-text">
-            Zaten hesabınız var mı?
-            <button 
-              onClick={() => navigate('/')}
-              className="login-link"
-            >
-              Giriş Yap
-            </button>
-          </p>
+      
         </div>
       </div>
     </div>
